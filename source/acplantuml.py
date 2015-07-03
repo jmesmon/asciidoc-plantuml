@@ -118,8 +118,8 @@ LICENSE
         os.chdir(outdir)
 
         try:
-            cmd = 'java -jar %s/plantuml.jar -T%s -quiet "%s" > "%s"' % (
-                  filter_path, self.options.format, infile, outfile)
+            cmd = 'java -jar %s/plantuml.jar -T%s -quiet "%s" -o "%s"' % (
+                  filter_path, self.options.format, infile, outdir)
             self.systemcmd(cmd)
         finally:
             os.chdir(saved_cwd)
