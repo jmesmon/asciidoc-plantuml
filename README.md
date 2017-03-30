@@ -3,7 +3,7 @@ Automatically exported from code.google.com/p/asciidoc-plantuml
 
 # Wiki
 
-## UFT_encoding
+## UTF_encoding
 
 By default, PlantUML use the default charset of your platform, which may or may not be UTF-8, in such case the plugin will output wrong characters. The workaround is to add -charset UTF-8 parameter in acplantuml.py script. This would be:
 
